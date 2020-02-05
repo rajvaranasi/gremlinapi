@@ -1,0 +1,8 @@
+---
+- name: Add 1 core of CPU load to a selected host for 30 seconds
+  hosts: localhost
+ 
+  tasks:
+ 
+  - name: Add 1 core of CPU load to a selected host for 30 seconds
+    script: gremlinCPUattack.sh
