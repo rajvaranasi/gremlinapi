@@ -1,0 +1,12 @@
+---
+- name: shutdown the host for chaos attack
+  hosts: localhost
+
+  tasks:
+
+  - name: shutdown the host for creating chaos attack
+    script: gremlinhostshutdown.sh
+  - name: checking current state of attack 
+    script: gremlinMemorystatusattack.sh  
+  - debug:
+      msg:  we will login to the machine and run uptime command 
