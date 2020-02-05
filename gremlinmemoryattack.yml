@@ -1,0 +1,8 @@
+---
+- name: Adding 6 GB of Memory to the chaos attack
+  hosts: localhost
+
+  tasks:
+
+  - name: Adding 6 GB of Memory to the chaos attack
+    script: gremlinMemoryAttack.sh
